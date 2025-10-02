@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<installer-gui-script minSpecVersion="2">
+    <pkg-ref id="com.AnV.Software.CatSaver">
+        <bundle-version>
+            <bundle CFBundleShortVersionString="1.0" CFBundleVersion="1" id="com.AnV.Software.CatSaver" path="CatSaver.saver"/>
+        </bundle-version>
+    </pkg-ref>
+    <product id="com.AnV.Software.CatSaver" version="1.0"/>
+    <title>CatSaver</title>
+    <options customize="never" require-scripts="false" hostArchitectures="arm64,x86_64"/>
+    <background file="background.tiff" alignment="bottomleft" scaling="proportional"/>
+    <readme file="CatSaver_ReadMe.html"/>
+    <choices-outline>
+        <line choice="default">
+            <line choice="com.AnV.Software.CatSaver"/>
+        </line>
+    </choices-outline>
+    <choice id="default" title="CatSaver" versStr="1.0"/>
+    <choice id="com.AnV.Software.CatSaver" title="CatSaver" visible="false" customLocation="/Library/Screen Savers">
+        <pkg-ref id="com.AnV.Software.CatSaver"/>
+    </choice>
+    <pkg-ref id="com.AnV.Software.CatSaver" version="1.0.0" onConclusion="none" installKBytes="1348" updateKBytes="0">catsaver-1.0.pkg</pkg-ref>
+</installer-gui-script>

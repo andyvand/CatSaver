@@ -1,0 +1,3 @@
+CatSaver.saver/Contents/Info.plist
+CatSaver.saver/Contents/MacOS/CatSaver
+CatSaver.saver/Contents/Resources/CatSaver.icns
